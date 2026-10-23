@@ -1,0 +1,29 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "develax-starter",
+  "version": "0.1.0",
+  "description": "디벨AX 바이브코딩 스타터팩 플러그인. /launch 홈페이지 만들기부터 GitHub Pages 공개까지 한 번에. 부품: /setup-check 환경 점검, /save GitHub 보관, /deploy-pages GitHub Pages 배포, /deploy-cloudflare Cloudflare Pages 배포.",
+  "author": {
+    "name": "DEVELAX",
+    "email": "dev@kiweb.or.kr"
+  },
+  "license": "MIT",
+  "homepage": "https://develog.develrocket.com/@web7722/develax-starter-plugin",
+  "repository": "https://github.com/develax-official/develax-starter",
+  "keywords": [
+    "develax",
+    "starter",
+    "deploy",
+    "cloudflare",
+    "github",
+    "github-pages",
+    "vibe-coding"
+  ],
+  "skills": [
+    "./skills/launch",
+    "./skills/setup-check",
+    "./skills/save",
+    "./skills/deploy-pages",
+    "./skills/deploy-cloudflare"
+  ]
+}

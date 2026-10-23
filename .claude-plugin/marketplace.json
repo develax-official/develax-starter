@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "develax",
+  "owner": {
+    "name": "DEVELAX",
+    "email": "dev@kiweb.or.kr"
+  },
+  "metadata": {
+    "description": "디벨AX 교재용 Claude Code 플러그인 모음"
+  },
+  "plugins": [
+    {
+      "name": "develax-starter",
+      "source": ".",
+      "description": "바이브코딩 스타터팩: /launch (만들기→보관→GitHub Pages 공개 한 번에), /setup-check, /save, /deploy-pages, /deploy-cloudflare"
+    }
+  ]
+}
