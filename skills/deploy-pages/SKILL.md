@@ -18,7 +18,9 @@ description: 현재 폴더의 정적 홈페이지(index.html)를 GitHub 저장�
 1. 현재 폴더 **맨 위**에 `index.html` 이 있는지 확인합니다. 없으면 어디 있는지 찾아 알려주고 "맨 위로 옮길까요?" 묻습니다. GitHub Pages는 맨 위(또는 `docs/`)만 지원하므로, 하위 폴더에 두겠다면 `docs/` 로 옮기도록 권합니다.
 2. index.html 안에 `/`로 시작하는 절대 경로 링크(`href="/style.css"`, `src="/img/..."`)가 있으면 경고합니다. GitHub Pages 주소는 `https://아이디.github.io/저장소/` 처럼 하위 경로라서 절대 경로가 깨집니다. "상대 경로(`img/...`)로 고칠까요?" 묻고 동의하면 고칩니다.
 3. 파일 목록을 보여주고 개인정보(전화번호, 주소)나 비밀 파일(`.env`, `*.key`, `secrets*`)이 있으면 경고하고 확인을 받습니다. GitHub Pages는 **공개 저장소**가 필요하므로 파일 전부가 공개된다고 분명히 말합니다.
-4. 이미 git 저장소이고 origin 이 있으면 → **5. 이후 배포** 로 갑니다.
+4. 이미 git 저장소이고 origin 이 있으면(예: `/save` 로 먼저 보관해 둔 폴더) Pages 가 켜져 있는지 확인합니다: `gh api "repos/$OWNER/<이름>/pages" -q .status`
+   - 켜져 있으면(`built` 등) → **5. 이후 배포** 로 갑니다.
+   - 404(안 켜짐)이면 → 저장소가 비공개인지 봅니다(`gh repo view --json visibility -q .visibility`). 비공개면 "GitHub Pages 는 공개 저장소에서만 됩니다. 저장소를 공개로 바꿀까요? 폴더 안 파일 전부가 누구나 볼 수 있게 됩니다" 를 묻고, 동의하면 `gh repo edit --visibility public --accept-visibility-change-consequences`. 그다음 `.nojekyll` 을 만들어 커밋·push 하고 **3번의 Pages 활성화**부터 이어갑니다(`gh repo create` 는 건너뜀). 비공개를 유지하고 싶다면 `/deploy-cloudflare` 를 권합니다.
 
 ## 2. 저장소 준비 (첫 배포)
 
