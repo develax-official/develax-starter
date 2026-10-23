@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/develax-official/develax-starter/releases"><img alt="release" src="https://img.shields.io/github/v/release/develax-official/develax-starter?label=release&color=004FFF"></a>
+  <a href="https://github.com/develax-official/develax-starter/releases"><img alt="version" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fdevelax-official%2Fdevelax-starter%2Fmain%2F.claude-plugin%2Fplugin.json&query=%24.version&label=version&color=004FFF"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-004FFF"></a>
   <a href="https://develax.develrocket.com"><img alt="DEVELAX" src="https://img.shields.io/badge/by-%EB%94%94%EB%B2%A8AX-030302"></a>
 </p>
