@@ -32,7 +32,7 @@ description: 현재 폴더의 작업을 GitHub 저장소에 보관(백업)한다
 5. ```
    gh repo create <이름> --private --source=. --remote=origin --push
    ```
-6. 출력: 저장소 주소 `https://github.com/<아이디>/<이름>` 와 "이제부터 `/save` 라고만 하면 됩니다".
+6. 출력: 저장소 주소 `https://github.com/<아이디>/<이름>` 와 "이제부터 `/save` 라고만 하면 됩니다". 폴더에 `DEPLOY.md` 가 없으면 "인터넷에 공개하려면 `/deploy-pages` 또는 `/deploy-cloudflare`" 두 가지를 함께 안내합니다. 한쪽만 말하지 않습니다(Cloudflare 를 대시보드에서 직접 연결한 사용자도 있습니다).
 
 ## 2. 이후 저장 (origin 이 있을 때)
 
@@ -42,6 +42,7 @@ description: 현재 폴더의 작업을 GitHub 저장소에 보관(백업)한다
 4. 출력: "저장했습니다: <메시지>. 기록 n개째." (`git rev-list --count HEAD`)
 5. 공개 여부는 추측하지 말고 `gh repo view --json visibility -q .visibility` 로 읽어서 말합니다.
 6. 폴더에 `DEPLOY.md` 가 있으면 이미 배포된 홈페이지입니다. GitHub Pages 면 push 만으로 1~2분 뒤 사이트에 자동 반영되므로 "1~2분 뒤 <사이트 주소>에 반영됩니다. 안 바뀌면 Ctrl+Shift+R (Mac: Cmd+Shift+R)" 라고 덧붙입니다. Cloudflare 면 "Cloudflare 가 1~2분 안에 새 버전을 배포합니다". "사이트에는 반영되지 않았습니다" 라고 말하지 않습니다.
+7. `DEPLOY.md` 가 없으면 "인터넷에 공개하려면 `/deploy-pages` 또는 `/deploy-cloudflare`" 두 가지를 함께 안내합니다. 이미 Cloudflare 대시보드에서 연결해 둔 폴더일 수 있으니 "아직 배포되지 않았다" 고 단정하지 않습니다.
 
 ## 3. 기록 보기
 

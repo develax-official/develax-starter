@@ -33,7 +33,7 @@ description: 현재 폴더의 정적 홈페이지(index.html)를 GitHub 저장�
    node_modules/
    ```
 2. `git init -b main` (이미 저장소면 생략), `git add -A`, `git commit -m "첫 배포"`.
-3. 저장소 이름을 정합니다. 기본값은 현재 폴더 이름(영문 소문자, 공백은 `-`). 사용자에게 "저장소 이름은 `my-homepage` 로 할까요?" 한 번 확인합니다.
+3. 저장소 이름을 정합니다. 기본값은 현재 폴더 이름(영문 소문자, 공백은 `-`). 사용자에게 "저장소 이름은 `my-homepage` 로 할까요?" 한 번 확인합니다. `gh auth status` 에 로그인된 계정이 둘 이상이면 "GitHub 계정이 n개 로그인되어 있습니다. 어느 계정에 올릴까요?" 를 이어서 한 번 묻고, 하나면 묻지 않습니다. 질문 순서는 항상 저장소 이름 → (계정) → 공개 여부입니다.
 4. 공개 여부: 기본 **public**. 비공개로 하고 싶다고 하면 `--private`. (Cloudflare Pages는 둘 다 됩니다.)
 
 ## 3. GitHub에 올리기
@@ -54,7 +54,7 @@ gh repo create <이름> --public --source=. --remote=origin --push
 >
 > 1. 이 주소를 엽니다: https://dash.cloudflare.com/?to=/:account/workers-and-pages/create/pages
 >    (계정이 없으면 먼저 가입: https://dash.cloudflare.com/sign-up)
-> 2. **Connect to Git** → GitHub 연결 허용 → 저장소 목록에서 `<이름>` 선택
+> 2. **Import an existing Git repository** → **Get started** → **Connect GitHub** (GitHub에서 계정 선택 → All repositories → Install & Authorize, 비밀번호를 다시 물으면 입력) → 저장소 목록에서 `<이름>` 선택 → **Begin setup**
 > 3. 설정은 아래처럼. 빌드 명령은 **비워둡니다**.
 >
 > | 항목 | 값 |
