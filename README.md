@@ -81,7 +81,7 @@ Claude 데스크톱 앱의 **Code 탭**(또는 Claude Code CLI) 입력창에 두
 ## 문제 신고와 문의
 
 - 설치나 실행이 안 되면 [Issues](https://github.com/develax-official/develax-starter/issues/new/choose)에 남겨 주세요. 어떤 명령을 입력했고 어떤 화면이 나왔는지 적어 주시면 빠르게 확인할 수 있습니다.
-- 이메일: dev@kiweb.or.kr
+- 이메일: develax@develrocket.com
 - 플러그인을 만든 배경: [Develog 소개 글](https://develog.develrocket.com/@web7722/develax-starter-plugin)
 - 디벨AX: https://develax.develrocket.com
 
