@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "develax-starter",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "디벨AX 바이브코딩 스타터팩 플러그인. /launch 홈페이지 만들기부터 GitHub Pages 공개까지 한 번에. 부품: /setup-check 환경 점검, /save GitHub 보관, /deploy-pages GitHub Pages 배포, /deploy-cloudflare Cloudflare Pages 배포.",
   "icon": "./assets/develax-icon.png",
   "author": {
