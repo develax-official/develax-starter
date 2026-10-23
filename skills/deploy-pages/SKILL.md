@@ -54,11 +54,7 @@ gh api -X POST "repos/$OWNER/<이름>/pages" -f 'source[branch]=main' -f 'source
 - index.html 을 `docs/` 에 두었다면 `source[path]=/docs`.
 - 409(이미 켜짐)는 성공으로 간주합니다.
 - 404/403 이면 저장소가 public 인지, gh 로그인 계정이 맞는지 확인합니다.
-
-HTTPS 강제(실패해도 무시):
-```
-gh api -X PUT "repos/$OWNER/<이름>/pages" -F https_enforced=true
-```
+- HTTPS 강제는 하지 않습니다. 기본 주소(`<아이디>.github.io`)는 GitHub 가 이미 HTTPS 를 강제하며, 첫 배포 직후 `https_enforced` 를 켜면 "certificate does not exist yet" 로 실패합니다. 내 도메인을 연결할 때(7번)만 합니다.
 
 ## 4. 주소 확인
 
