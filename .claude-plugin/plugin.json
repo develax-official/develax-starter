@@ -11,6 +11,7 @@
   "license": "MIT",
   "homepage": "https://develog.develrocket.com/@web7722/develax-starter-plugin",
   "repository": "https://github.com/develax-official/develax-starter",
+  "privacyPolicyUrl": "https://github.com/develax-official/develax-starter/blob/main/PRIVACY.md",
   "keywords": [
     "develax",
     "starter",

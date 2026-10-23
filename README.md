@@ -78,6 +78,8 @@ Claude 데스크톱 앱의 **Code 탭**(또는 Claude Code CLI) 입력창에 두
 - 기록을 지우는 `reset --hard`, `push --force`를 **쓰지 않습니다**. 되돌리기는 항상 새 기록으로 남깁니다.
 - 저장소를 공개로 만들거나 공개 전환할 때는 **먼저 묻습니다**.
 
+DEVELAX는 어떤 데이터도 수집하지 않습니다. 입력한 내용은 내 컴퓨터와 내 GitHub(선택 시 Cloudflare) 계정에만 저장됩니다. 자세한 내용은 [개인정보 처리방침](PRIVACY.md)을 보세요.
+
 ## 문제 신고와 문의
 
 - 설치나 실행이 안 되면 [Issues](https://github.com/develax-official/develax-starter/issues/new/choose)에 남겨 주세요. 어떤 명령을 입력했고 어떤 화면이 나왔는지 적어 주시면 빠르게 확인할 수 있습니다.
