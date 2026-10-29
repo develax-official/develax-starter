@@ -1,8 +1,8 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "develax-starter",
-  "version": "0.1.6",
-  "description": "디벨AX 바이브코딩 스타터팩 플러그인. /launch 홈페이지 만들기부터 GitHub Pages 공개까지 한 번에. 부품: /setup-check 환경 점검, /save GitHub 보관, /deploy-pages GitHub Pages 배포, /deploy-cloudflare Cloudflare Pages 배포.",
+  "version": "0.2.0",
+  "description": "디벨AX 바이브코딩 스타터팩 플러그인. /launch 홈페이지 만들기부터 GitHub Pages 공개까지 한 번에, /portfolio 내 기록으로 웹 포트폴리오 만들기(JD 매칭, 검증, 루브릭 점수). 부품: /setup-check 환경 점검, /save GitHub 보관, /deploy-pages GitHub Pages 배포, /deploy-cloudflare Cloudflare 배포, /portfolio-project 프로젝트 자료 모으기, /portfolio-build 포트폴리오 페이지 제작, /portfolio-review 검증과 루브릭 점수표.",
   "icon": "./assets/develax-icon.png",
   "author": {
     "name": "DEVELAX",
@@ -19,13 +19,19 @@
     "cloudflare",
     "github",
     "github-pages",
-    "vibe-coding"
+    "vibe-coding",
+    "portfolio",
+    "career"
   ],
   "skills": [
     "./skills/launch",
     "./skills/setup-check",
     "./skills/save",
     "./skills/deploy-pages",
-    "./skills/deploy-cloudflare"
+    "./skills/deploy-cloudflare",
+    "./skills/portfolio",
+    "./skills/portfolio-project",
+    "./skills/portfolio-build",
+    "./skills/portfolio-review"
   ]
 }

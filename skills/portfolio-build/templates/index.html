@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Keep this page out of search results. Remove only if the owner asks to be searchable. -->
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>{{이름}} | {{지원 직무}} 포트폴리오</title>
+  <meta name="description" content="{{소개 한 문장}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{이름}} | {{지원 직무}} 포트폴리오">
+  <meta property="og:description" content="{{소개 한 문장}}">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/print.css" media="print">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="#top">{{이름}}</a>
+      <ul>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#experience">경험</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- 01 소개: 누구를 위해 무엇을 하는 사람인지 한 문장 -->
+    <section class="intro">
+      <div class="wrap">
+        <p class="role">{{지원 직무}}</p>
+        <h1>{{누구를 위해 무엇을 하는 사람인지 한 문장}}</h1>
+        <p class="summary">{{2~3문장 요약. 경험 카드에 근거가 있는 내용만}}</p>
+        <ul class="tags jd" aria-label="핵심 역량">
+          <li>{{JD 역량 1}}</li>
+          <li>{{JD 역량 2}}</li>
+          <li>{{JD 역량 3}}</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 02 대표 프로젝트: JD 요구 역량 순서, 2~3개 -->
+    <section class="projects" id="projects">
+      <div class="wrap">
+        <p class="section-label">Projects</p>
+        <h2>대표 프로젝트</h2>
+
+        <!-- Repeat this article per featured project -->
+        <article class="project">
+          <h3>{{프로젝트 제목: 무엇을 해결했는지가 드러나게}}</h3>
+          <p class="meta"><span>{{기간}}</span><span>{{내 역할}}</span><span>{{팀 구성}}</span><span>{{도구}}</span></p>
+          <ul class="tags jd" aria-label="연결되는 역량">
+            <li>{{연결되는 JD 역량}}</li>
+          </ul>
+          <div class="cards">
+            <div class="card">
+              <h4>문제</h4>
+              <p>{{무엇이 잘못돼 있었나}}</p>
+            </div>
+            <div class="card card-why">
+              <h4>판단</h4>
+              <p>{{왜 그렇게 결정했나}}</p>
+            </div>
+            <div class="card">
+              <h4>행동</h4>
+              <p>{{실제로 무엇을 했나}}</p>
+            </div>
+            <div class="card">
+              <h4>결과</h4>
+              <p>{{무엇이 달라졌나. 근거 없으면 <mark class="todo">확인 필요: 결과 수치</mark>}}</p>
+            </div>
+          </div>
+          <figure>
+            <img src="assets/images/{{영문-파일명}}.png" alt="{{이미지가 보여주는 것}}">
+            <figcaption>{{캡션 한 줄}}</figcaption>
+          </figure>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 03 주요 경험: 나머지는 한 줄씩 -->
+    <section id="experience">
+      <div class="wrap">
+        <p class="section-label">Experience</p>
+        <h2>주요 경험</h2>
+        <ul class="exp">
+          <li>
+            <span class="when">{{기간}}</span>
+            <div><strong>{{소속 / 프로젝트}}</strong>{{한 일 한 줄}}</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 04 연락처: 이메일 권장. 전화번호, 집 주소는 넣지 않음 -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <p class="section-label">Contact</p>
+        <h2>연락처</h2>
+        <ul>
+          <li>이메일: <a href="mailto:{{이메일}}">{{이메일}}</a></li>
+          <li>{{링크 이름}}: <a class="url" href="{{https://...}}">{{https://...}}</a></li>
+        </ul>
+        <a class="button no-print" href="assets/files/resume.pdf" download>이력서 PDF 받기</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">© {{연도}} {{이름}}</div>
+  </footer>
+
+</body>
+</html>

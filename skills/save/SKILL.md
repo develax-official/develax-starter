@@ -13,6 +13,11 @@ description: 현재 폴더의 작업을 GitHub 저장소에 보관(백업)한다
 
 `setup-check` 스킬의 1번(점검 실행)을 수행합니다. git, gh, GitHub 로그인 중 하나라도 ❌면 멈추고 setup-check의 대응 절차로 안내합니다.
 
+## 포트폴리오 폴더 (PORTFOLIO.md 가 있을 때)
+
+포트폴리오 작업 폴더는 원본 기록이 들어 있어서 **이 폴더 전체는 항상 비공개**로 보관합니다. 공개 여부를 묻지 않고 `--private` 로 만들고, 공개 전환 요청이 오면 "원본 기록이 함께 공개됩니다. 공개는 `site/` 만 `/deploy-pages` 로 하세요"라고 안내합니다.
+`site/` 안에 별도 `.git` 이 있으면(이미 배포한 상태) `site/` 는 공개 저장소에 따로 보관된 것입니다. 이 폴더 저장소에서는 `site/` 를 `.gitignore` 에 넣고, 이미 추적 중이면 `git rm -r --cached site` 로 한 번 빼 둡니다(파일은 지워지지 않습니다).
+
 ## 1. 처음 저장 (저장소가 없을 때)
 
 `git rev-parse --is-inside-work-tree` 와 `git remote -v` 로 확인합니다. origin 이 있으면 **2번**으로.

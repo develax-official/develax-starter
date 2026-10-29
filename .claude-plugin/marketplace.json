@@ -12,7 +12,7 @@
     {
       "name": "develax-starter",
       "source": ".",
-      "description": "바이브코딩 스타터팩: /launch (만들기→보관→GitHub Pages 공개 한 번에), /setup-check, /save, /deploy-pages, /deploy-cloudflare"
+      "description": "바이브코딩 스타터팩: /launch (만들기→보관→GitHub Pages 공개 한 번에), /portfolio (내 기록으로 웹 포트폴리오, 검증·루브릭 점수), /setup-check, /save, /deploy-pages, /deploy-cloudflare"
     }
   ]
 }
